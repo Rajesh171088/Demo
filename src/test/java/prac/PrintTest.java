@@ -1,5 +1,7 @@
 package prac;
 
+import java.sql.DriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -10,6 +12,7 @@ public class PrintTest {
 	public void trialTest() throws InterruptedException
 	{
 		String browser="chrome";
+		
 		WebDriver driver=new ChromeDriver();
 		String url="https://mail.google.com/mail/u/0/#inbox";
 		driver.get(url);
