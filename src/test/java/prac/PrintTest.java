@@ -19,6 +19,8 @@ public class PrintTest {
 		String url="https://mail.google.com/mail/u/0/#inbox";
 		driver.get(url);
 		Thread.sleep(2000);
+		System.out.println(url);
+		System.out.println(driver);
 		driver.quit();		
 	}
 
