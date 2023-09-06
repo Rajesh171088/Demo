@@ -1,6 +1,5 @@
 package prac;
 
-import java.sql.DriverManager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,11 +10,11 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PrintTest {
-	@Parameters("browser")
+
 	@Test
-	public void trialTest(String browser) throws InterruptedException
+	public void trialTest() throws InterruptedException
 	{
-		System.getProperty("browser","chrome");
+		String browser=System.getProperty("browser","chrome");
 		WebDriver driver;
 		if(browser.equalsIgnoreCase("chrome"))
 		{
